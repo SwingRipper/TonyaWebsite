@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <title>American Document Service</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../images/A_LOGO.png" type="image/png">
+
 </head>
 <body>
 
 <header>
     <h1>American Document Service</h1>
-    <div>209-971-9616 | Email</div>
+    <div>
+        <a href="tel:2099719616">209-971-9616</a> | <a href="mailto:tonyafontes22@gmail.com">tonyafontes22@gmail.com</a>
+      </div>
+      
     <nav>
         <a href="index.html"><i><b>Home</b></i></a>
         <a href="services.html">Services</a>
@@ -20,18 +25,41 @@
 </header>
 
 <div class="hero">
-    Personal Attention You Deserve
+    Personal Attention You Deserve | The People You Can Trust
 </div>
 
 <section>
     <div class="card">
-        <img src="https://placecats.com/600/300" alt="Placeholder">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum libero a quam interdum, nec convallis lorem dictum.</p>
+        <img src="../images/usa-independence-day-composition-with-declaration-letters-1-scaled.jpg" alt="Placeholder">
+        <p>Our team of Document Specialists can help you process an array of legal documents. We offer support for immigration, LiveScan fingerprinting, divorce, child custody, notary, power of attorney, and more! Proficient in both English and Spanish, our team is dedicated to making sure you have the most quality and timely experience at American Document Service. <br>
+            <br>
+            American Document Service is a cost-effective alternative solution to hiring a lawyer for routine services. We are committed to being with you at every step, and our goal is to prepare you with the confidence and support to take on your legal matter.
+            <br><br>
+            American Document Service is proud to serve Northern and central California. We help alleviate the stress of legal paperwork and offer trusted guidance to get your legal needs taken care of in a prompt, professional manner. We are open daily from 9:00 AM – 6:00 PM, Monday through Friday.
+            <br><br>
+            Let me know if you need any other edits!</p>
     </div>
 
     <div class="card">
-        <img src="https://placecats.com/600/300" alt="Placeholder">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae orci sed sapien consequat malesuada.</p>
+        <img src="../images/imgpsh_fullsize_anim-6.jpg" alt="Placeholder">
+        <h2>Areas We Serve</h2>
+        <ul>
+            <li>Fresno</li>
+            <li>Merced</li>
+            <li>Monterey</li>
+            <li>Stanislaus</li>
+            <li>San Joaquin</li>
+            <li> Yolo</li>
+            <li> Solano</li>
+            <li> San Francisco</li>
+            <li> Ventura</li>
+            <li> Alameda</li>
+            <li>  Mariposa</li>
+            <li>  Sutter</li>
+            <li>  Calaveras</li>
+            <li>  Sacramento</li>
+            <li>  Contra Costa</li>
+          </ul>
     </div>
 </section>
 
@@ -45,12 +73,25 @@
     </div>
     <div class="quick-contact">
         <h3>Quick Contact</h3>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Address">
-        <input type="email" placeholder="Email">
-        <input type="tel" placeholder="Phone">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
+        <form action="https://formspree.io/f/mdkglvng" method="POST">
+            <label for="name">Name <span style="color: red;">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Your address (optional)">
+          
+            <label for="email">Email <span style="color: red;">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555 (optional)">
+          
+            <label for="message">Message <span style="color: red;">*</span></label>
+            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+          
+            <button type="submit">Submit</button>
+          </form>
+          
     </div>
 </footer>
 
